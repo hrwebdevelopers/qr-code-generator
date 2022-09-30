@@ -1,4 +1,7 @@
 {
   "name": "qr-code-generator",
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }
