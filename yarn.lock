@@ -1435,10 +1435,18 @@ __metadata:
   dependencies:
     autoprefixer: ^10.4.12
     postcss: ^8.4.17
+    qrcodejs: ^1.0.0
     tailwindcss: ^3.1.8
     vite: ^3.1.0
   languageName: unknown
   linkType: soft
+
+"qrcodejs@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "qrcodejs@npm:1.0.0"
+  checksum: 01b0e2b75a4458d02769c1f6597e156332c4a9c1ea58e6afce47aba891e119903363f20cc5f8e3962b2867882e68b54328b14b1470f1959922a23841dfe72f46
+  languageName: node
+  linkType: hard
 
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
