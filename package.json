@@ -1,10 +1,15 @@
 {
   "name": "qr-code-generator",
   "packageManager": "yarn@3.2.2",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "watch:tailwindcss": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/style.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0"
   }
 }
