@@ -48,12 +48,16 @@ const clearUI = () => {
 // Show loader
 const showLoader = () => {
   const loader = document.getElementById('loader');
+  const qrImage = document.getElementById('qr-image');
+  qrImage.style.display = 'none';
   loader.style.display = 'block';
 };
 
 // Hide loader
 const hideLoader = () => {
   const loader = document.getElementById('loader');
+  const qrImage = document.getElementById('qr-image');
+  qrImage.style.display = 'block';
   loader.style.display = 'none';
 };
 
@@ -62,10 +66,11 @@ const createSaveBtn = (saveUrl) => {
   const link = document.createElement('a');
   link.id = 'save-link';
   link.classList =
-    'bg-red-500 hover:bg-red-700 text-white font-bold py-2 rounded w-1/3 m-auto my-5';
+    'bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 rounded w-full m-auto my-5';
   link.href = saveUrl;
   link.download = 'qrcode';
   link.innerHTML = 'Guardar Imagen';
+  window.scrollTo({ top: 0, behavior: "smooth" });
   document.getElementById('qr-generated').appendChild(link);
 };
 
