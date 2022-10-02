@@ -5,6 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@babel/standalone@npm:^7.19.0":
+  version: 7.19.3
+  resolution: "@babel/standalone@npm:7.19.3"
+  checksum: 6811c1472fc0935a150b1e1e96507b5e631e799320599445c5d61edf696f3a3408fa0317339265b0a666986a2fc3cd6503afbe711c75300e964cea95e0aba566
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm@npm:0.15.10":
   version: 0.15.10
   resolution: "@esbuild/android-arm@npm:0.15.10"
@@ -73,10 +80,70 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/plugin-commonjs@npm:^22.0.2":
+  version: 22.0.2
+  resolution: "@rollup/plugin-commonjs@npm:22.0.2"
+  dependencies:
+    "@rollup/pluginutils": ^3.1.0
+    commondir: ^1.0.1
+    estree-walker: ^2.0.1
+    glob: ^7.1.6
+    is-reference: ^1.2.1
+    magic-string: ^0.25.7
+    resolve: ^1.17.0
+  peerDependencies:
+    rollup: ^2.68.0
+  checksum: 70098a4b91afe3f164f5d27cba65edf148c5ed146ee0e07a964b66940681553ac77391083114cdcf9427e7f2706bf0d61eab310b3a2caeab83b7452c0292fcae
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@rollup/pluginutils@npm:3.1.0"
+  dependencies:
+    "@types/estree": 0.0.39
+    estree-walker: ^1.0.1
+    picomatch: ^2.2.2
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0
+  checksum: 8be16e27863c219edbb25a4e6ec2fe0e1e451d9e917b6a43cf2ae5bc025a6b8faaa40f82a6e53b66d0de37b58ff472c6c3d57a83037ae635041f8df959d6d9aa
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*":
+  version: 1.0.0
+  resolution: "@types/estree@npm:1.0.0"
+  checksum: 910d97fb7092c6738d30a7430ae4786a38542023c6302b95d46f49420b797f21619cdde11fa92b338366268795884111c2eb10356e4bd2c8ad5b92941e9e6443
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:0.0.39":
+  version: 0.0.39
+  resolution: "@types/estree@npm:0.0.39"
+  checksum: 412fb5b9868f2c418126451821833414189b75cc6bf84361156feed733e3d92ec220b9d74a89e52722e03d5e241b2932732711b7497374a404fad49087adc248
+  languageName: node
+  linkType: hard
+
+"@vitejs/plugin-legacy@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@vitejs/plugin-legacy@npm:2.2.0"
+  dependencies:
+    "@babel/standalone": ^7.19.0
+    core-js: ^3.25.1
+    magic-string: ^0.26.3
+    regenerator-runtime: ^0.13.9
+    systemjs: ^6.12.6
+  peerDependencies:
+    terser: ^5.4.0
+    vite: ^3.0.0
+  checksum: 86f549278003e862febc41d6c1b753ca2ce598ac8b75c504050367f3074249c5ddff992c4a04654b05fe0151ee514880ce8508311bb852cebe3d7d07c5c8500f
   languageName: node
   linkType: hard
 
@@ -348,6 +415,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commondir@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "commondir@npm:1.0.1"
+  checksum: 59715f2fc456a73f68826285718503340b9f0dd89bfffc42749906c5cf3d4277ef11ef1cca0350d0e79204f00f1f6d83851ececc9095dc88512a697ac0b9bdcb
+  languageName: node
+  linkType: hard
+
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -359,6 +433,13 @@ __metadata:
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: 8755d76787f94e6cf79ce4666f0c5519906d7f5b02d4b884cf41e11dcd759ed69c57da0670afd9236d229a46e0f9cf519db0cd829c6dca820bb5a5c3def584ed
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.25.1":
+  version: 3.25.3
+  resolution: "core-js@npm:3.25.3"
+  checksum: 26ca0a5e575e6da03dc30099f48bc00db50a1c0a3f81299165f111cb163869ae453de5e345f2cb7bc8be85a9adcee11fca94f0fbdbdf6d483c68e1c55a9efc5a
   languageName: node
   linkType: hard
 
@@ -692,6 +773,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"estree-walker@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "estree-walker@npm:1.0.1"
+  checksum: 7e70da539691f6db03a08e7ce94f394ce2eef4180e136d251af299d41f92fb2d28ebcd9a6e393e3728d7970aeb5358705ddf7209d52fbcb2dd4693f95dcf925f
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^2.0.1":
+  version: 2.0.2
+  resolution: "estree-walker@npm:2.0.2"
+  checksum: 6151e6f9828abe2259e57f5fd3761335bb0d2ebd76dc1a01048ccee22fabcfef3c0859300f6d83ff0d1927849368775ec5a6d265dde2f6de5a1be1721cd94efc
+  languageName: node
+  linkType: hard
+
 "fast-glob@npm:^3.2.11":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
@@ -806,7 +901,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.3, glob@npm:^7.1.4":
+"glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -1002,6 +1097,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-reference@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "is-reference@npm:1.2.1"
+  dependencies:
+    "@types/estree": "*"
+  checksum: e7b48149f8abda2c10849ea51965904d6a714193d68942ad74e30522231045acf06cbfae5a4be2702fede5d232e61bf50b3183acdc056e6e3afe07fcf4f4b2bc
+  languageName: node
+  linkType: hard
+
 "isexe@npm:^2.0.0":
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
@@ -1029,6 +1133,24 @@ __metadata:
   version: 7.14.0
   resolution: "lru-cache@npm:7.14.0"
   checksum: efdd329f2c1bb790b71d497c6c59272e6bc2d7dd060ba55fc136becd3dd31fc8346edb446275504d94cb60d3c8385dbf5267b79b23789e409b2bdf302d13f0d7
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.25.7":
+  version: 0.25.9
+  resolution: "magic-string@npm:0.25.9"
+  dependencies:
+    sourcemap-codec: ^1.4.8
+  checksum: 9a0e55a15c7303fc360f9572a71cffba1f61451bc92c5602b1206c9d17f492403bf96f946dfce7483e66822d6b74607262e24392e87b0ac27b786e69a40e9b1a
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.26.3":
+  version: 0.26.5
+  resolution: "magic-string@npm:0.26.5"
+  dependencies:
+    sourcemap-codec: ^1.4.8
+  checksum: b09d989586b3f16924559bda75a2b12253c9874a0f2969749a672755d84e3cce13276bc3e6c6e5e9e740973caf446725a4cb102ed5c9a8f012497974c15f6d65
   languageName: node
   linkType: hard
 
@@ -1317,7 +1439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.3.1":
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2, picomatch@npm:^2.3.1":
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
   checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
@@ -1433,11 +1555,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "qr-code-generator@workspace:."
   dependencies:
+    "@rollup/plugin-commonjs": ^22.0.2
+    "@vitejs/plugin-legacy": ^2.2.0
     autoprefixer: ^10.4.12
     postcss: ^8.4.17
     qrcodejs: ^1.0.0
     tailwindcss: ^3.1.8
-    vite: ^3.1.0
+    vite: ^3.1.4
   languageName: unknown
   linkType: soft
 
@@ -1491,7 +1615,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.1.7, resolve@npm:^1.22.1":
+"regenerator-runtime@npm:^0.13.9":
+  version: 0.13.9
+  resolution: "regenerator-runtime@npm:0.13.9"
+  checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
+  languageName: node
+  linkType: hard
+
+"resolve@npm:^1.1.7, resolve@npm:^1.17.0, resolve@npm:^1.22.1":
   version: 1.22.1
   resolution: "resolve@npm:1.22.1"
   dependencies:
@@ -1504,7 +1635,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.1
   resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
   dependencies:
@@ -1639,6 +1770,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sourcemap-codec@npm:^1.4.8":
+  version: 1.4.8
+  resolution: "sourcemap-codec@npm:1.4.8"
+  checksum: b57981c05611afef31605732b598ccf65124a9fcb03b833532659ac4d29ac0f7bfacbc0d6c5a28a03e84c7510e7e556d758d0bb57786e214660016fb94279316
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^9.0.0":
   version: 9.0.1
   resolution: "ssri@npm:9.0.1"
@@ -1681,6 +1819,13 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
+  languageName: node
+  linkType: hard
+
+"systemjs@npm:^6.12.6":
+  version: 6.13.0
+  resolution: "systemjs@npm:6.13.0"
+  checksum: df8d7374249778291f3a85278fdb3e1b9d81ac07767b0a7f9edeca0ee45d847c19bceb01522c817605e2908d32a4fcfed6bacd707bfb7bd577774ab900d3707d
   languageName: node
   linkType: hard
 
@@ -1781,7 +1926,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.1.0":
+"vite@npm:^3.1.4":
   version: 3.1.4
   resolution: "vite@npm:3.1.4"
   dependencies:
