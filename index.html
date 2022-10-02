@@ -30,13 +30,14 @@
           rápida.
         </p>
         <p>
-          Ingrese su URL a continuación para generar un código QR y descargar la imagen generada.
+          Ingrese su URL para generar au código QR y descargar la imagen.
         </p>
         <form id="qr-generate-form" class="mt-4">
-          <label for="url">Sitio web</label>
-          <input value="https://hr-webdev.com/" id="url" type="url"
-            placeholder="Ingresa el URL de tu negocio, restaurante o red social."
-            class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5" required />
+          <label for="url">Tu Sitio web <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(No olvides "http://" o
+              "https://")</span></label>
+          <input id="url" type="url" placeholder="Ingresa el URL de tu negocio, restaurante &oacute; red social."
+            class="w-full border-2 border-gray-200 rounded px-3 pt-3 text-grey-dark mr-2 focus:outline-none mb-5" required />
+          <label for="size">Dimensiones <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(px)</span></label>
           <select name="size" id="size"
             class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none">
             <option value="100">100x100</option>
@@ -69,7 +70,9 @@
   </main>
   <script type="module" src="main.js"></script>
   <script type="module" src="/src/assets/js/code-generator.js"></script>
-  <script src="/node_modules/qrcodejs/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
