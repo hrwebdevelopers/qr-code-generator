@@ -1,7 +1,5 @@
 const qr = document.getElementById('qrcode');
 const form = document.getElementById('qr-generate-form');
-import 'qrcodejs';
-var QRCode;
 
 // SUBMIT ACTION
 const onGenerate = (e) => {
@@ -30,7 +28,7 @@ const onGenerate = (e) => {
 
 // Generate QR code
 const generateQRCode = (url, size) => {
-  const qrcode = new QRCode('qrcode', {
+  var qrcode = new QRCode('qrcode', {
     text: url,
     width: size,
     height: size,
