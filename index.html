@@ -5,12 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generador de c&oacute;digo QR en linea | Gratis</title>
-  <link rel="icon" type="image/svg+xml" href="src/assets/media/vite.svg" />
+  <title>Generador de c&oacute;digo QR para redirigir a tu sitio web en linea | Gratis</title>
+  
+  <meta name="title" content="Generador de c&oacute;digo QR para redirigir a tu sitio web en linea | Gratis">
+  <meta name="description"
+    content="Genera un c&oacute;digo de QR como imagen que te redirija a tu sitio web gratis, Agrega el URL de tu negocio, selcciona el tamano y listo.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hectorromerodev.github.io/qr-code-generator/">
+  <meta property="og:title" content="Generador de c&oacute;digo QR para redirigir a tu sitio web en linea | Gratis">
+  <meta property="og:description"
+    content="Genera un c&oacute;digo de QR como imagen que te redirija a tu sitio web gratis, Agrega el URL de tu negocio, selcciona el tamano y listo.">
+  <meta property="og:image" content="https://hectorromerodev.github.io/qr-code-generator/assets/qr-code.52d2730a.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://hectorromerodev.github.io/qr-code-generator/">
+  <meta property="twitter:title" content="Generador de c&oacute;digo QR para redirigir a tu sitio web en linea | Gratis">
+  <meta property="twitter:description"
+    content="Genera un c&oacute;digo de QR como imagen que te redirija a tu sitio web gratis, Agrega el URL de tu negocio, selcciona el tamano y listo.">
+  <meta property="twitter:image"
+    content="https://hectorromerodev.github.io/qr-code-generator/assets/qr-code.52d2730a.png">
+  
+  <meta name="description"
+    content="Genera un c&oacute;digo de QR como imagen que te redirija a tu sitio web gratis, Agrega el URL de tu negocio, selcciona el tamano y listo." />
 
+  <link rel="icon" type="image/png" href="qr-code-ico.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/assets/css/app.css">
-
+  <link rel="stylesheet" href="src/assets/css/app.css">
 </head>
 
 <body>
@@ -19,8 +41,6 @@
       <div class="text-xl font-bold text-white">Generador de c&oacute;digo QR</div>
     </div>
   </header>
-  <!-- LOADER -->
-  <!-- <img class="hidden" src="src/assets/media/rolling-0.8s-200px.svg" alt="Loading Icon Active" /> -->
   <main id="app">
     <div class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl p-5 md:flex-row">
       <section class="w-full md:w-2/3 mr-24">
@@ -30,13 +50,14 @@
           rápida.
         </p>
         <p>
-          Ingrese su URL a continuación para generar un código QR y descargar la imagen generada.
+          Ingrese su URL para generar au código QR y descargar la imagen.
         </p>
         <form id="qr-generate-form" class="mt-4">
-          <label for="url">Sitio web</label>
-          <input value="https://hr-webdev.com/" id="url" type="url"
-            placeholder="Ingresa el URL de tu negocio, restaurante o red social."
-            class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5" required />
+          <label for="url">Tu Sitio web <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(No olvides "http://" o
+              "https://")</span></label>
+          <input id="url" type="url" placeholder="Ingresa el URL de tu negocio, restaurante &oacute; red social."
+            class="w-full border-2 border-gray-200 rounded px-3 pt-3 text-grey-dark mr-2 focus:outline-none mb-5" required />
+          <label for="size">Dimensiones <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(px)</span></label>
           <select name="size" id="size"
             class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none">
             <option value="100">100x100</option>
@@ -67,9 +88,11 @@
       </section>
     </div>
   </main>
-  <script type="module" src="main.js"></script>
-  <script type="module" src="/src/assets/js/code-generator.js"></script>
-  <script src="/node_modules/qrcodejs/qrcode.min.js"></script>
+
+  <script type="module" src="src/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
