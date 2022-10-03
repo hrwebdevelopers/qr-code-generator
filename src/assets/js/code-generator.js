@@ -1,5 +1,5 @@
+
 const qr = document.getElementById('qrcode');
-const form = document.getElementById('qr-generate-form');
 
 // SUBMIT ACTION
 const onGenerate = (e) => {
@@ -76,4 +76,13 @@ const createSaveBtn = (saveUrl) => {
 
 hideLoader();
 
+const form = document.getElementById('qr-generate-form');
 form.addEventListener('submit', onGenerate);
+
+export default {
+  onGenerate,
+  generateQRCode,
+  clearUI,
+  showLoader,
+  hideLoader
+};

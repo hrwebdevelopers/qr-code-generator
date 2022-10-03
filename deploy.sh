@@ -4,6 +4,7 @@
 set -e
 
 # build
+npx tailwindcss -o src/assets/css/app.css --minify
 yarn run build
 
 # navigate into the build output directory
@@ -14,14 +15,14 @@ echo > .nojekyll
 
 
 git init
-git checkout -b main
+git checkout --
 git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:hectorromerodev.github.io.git main
+# git push -f https://github.com/hectorromerodev/qr-code-generator main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+git push -f https://github.com/hectorromerodev/qr-code-generator
 
 cd -
