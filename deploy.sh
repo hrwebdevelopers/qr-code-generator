@@ -4,6 +4,7 @@
 set -e
 
 # build
+npx tailwindcss -o src/assets/css/app.css --minify
 yarn run build
 
 # navigate into the build output directory
