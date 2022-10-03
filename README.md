@@ -1,10 +1,11 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
+<div align="center">
 
-[![pages-build-deployment](https://github.com/hectorromerodev/qr-code-generator/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hectorromerodev/qr-code-generator/actions/workflows/pages/pages-build-deployment)
+  [![pages-build-deployment](https://github.com/hectorromerodev/qr-code-generator/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hectorromerodev/qr-code-generator/actions/workflows/pages/pages-build-deployment)
 
-[![pages-build-deployment](https://github.com/hrwebdevelopers/qr-code-generator/fork/badge.svg?branch=main&event=fork)](https://github.com/hrwebdevelopers/qr-code-generator/fork)
+<div>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -18,8 +19,13 @@
   <p align="center">
     Genera un c&oacute;digo de QR como imagen que te redirija a tu sitio web gratis, Agrega el URL de tu negocio, selcciona el tamano y listo.
     <br />
-    <a href="https://hrwebdevelopers.github.io/qr-code-generator">Ver Demo</a>
-    <a href="https://github.com/hrwebdevelopers/qr-code-generator/issues">Solicitar nueva caracteristica</a>
+    .
+    <a href="https://hrwebdevelopers.github.io/qr-code-generator">VER DEMO</a>
+    .
+    <a href="https://github.com/hrwebdevelopers/qr-code-generator/issues/new">SOLICITAR CARACTERISTICA</a>.
+    .
+    <a href="https://github.com/hrwebdevelopers/qr-code-generator/issues/new">REPORTAR UN ERROR</a>
+    .
   </p>
 </div>
 
