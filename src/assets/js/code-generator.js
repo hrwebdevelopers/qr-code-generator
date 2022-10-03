@@ -1,8 +1,8 @@
-// import QRCode from 'qrcodejs';
+
 const qr = document.getElementById('qrcode');
 
 // SUBMIT ACTION
-const onGenerate = function (e) {
+const onGenerate = (e) => {
   e.preventDefault();
 
   clearUI();
