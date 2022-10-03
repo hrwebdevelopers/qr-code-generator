@@ -5,15 +5,86 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
   <title>Generador de c&oacute;digo QR</title>
 
   <script src="assets/js/app.js" defer></script>
+=======
+  <title>Generador de c&oacute;digo QR en linea | Gratis</title>
+  <link rel="icon" type="image/png" href="qr-code-ico.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/assets/css/app.css">
+>>>>>>> Stashed changes
 
 </head>
 
 <body>
+<<<<<<< Updated upstream
   <h1>QR GENERATOR</h1>
 
+=======
+  <header class="p-4 mb-10 bg-blue-900">
+    <div class="max-w-5xl m-auto">
+      <div class="text-xl font-bold text-white">Generador de c&oacute;digo QR</div>
+    </div>
+  </header>
+  <main id="app">
+    <div class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl p-5 md:flex-row">
+      <section class="w-full md:w-2/3 mr-24">
+        <h1 class="text-3xl font-bold mb-5 md:text-4xl">Generador de c&oacute;digo QR</h1>
+        <p class="mb-4">
+          Los códigos QR permiten a los usuarios de teléfonos inteligentes acceder a tu sitio web de manera simple y
+          rápida.
+        </p>
+        <p>
+          Ingrese su URL para generar au código QR y descargar la imagen.
+        </p>
+        <form id="qr-generate-form" class="mt-4">
+          <label for="url">Tu Sitio web <span class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(No olvides
+              "http://" o
+              "https://")</span></label>
+          <input id="url" type="url" placeholder="Ingresa el URL de tu negocio, restaurante &oacute; red social."
+            class="w-full border-2 border-gray-200 rounded px-3 pt-3 text-grey-dark mr-2 focus:outline-none mb-5"
+            required />
+          <label for="size">Dimensiones <span
+              class="m-0 p-0 text-xs text-slate-600 dark:text-slate-400">(px)</span></label>
+          <select name="size" id="size"
+            class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200">200x200</option>
+            <option value="250" selected>250x250</option>
+            <option value="300">300x300</option>
+            <option value="400">400x400</option>
+            <option value="500">500x500</option>
+            <option value="600">600x600</option>
+            <option value="700">700x700</option>
+          </select>
+          <button class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black" type="submit">
+            Generar c&oacute;digo QR
+          </button>
+        </form>
+      </section>
+      <section>
+        <img id="qr-image" class="mx-auto" height="200" width="200" src="src/assets/media/qr-code.png"
+          alt="Imagen de Codigo QR">
+      </section>
+      <section id="qr-generated" class="mx-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
+        <!-- LOADER -->
+        <div id="loader" role="status">
+          <img src="src/assets/media/rolling-0.8s-200px.svg" alt="Loader spinner animation">
+        </div>
+        <div id="qrcode" class="m-auto"></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="src/main.js"></script>
+  <!-- <script type="module" src="/src/assets/js/code-generator.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+>>>>>>> Stashed changes
 </body>
 
 </html>
