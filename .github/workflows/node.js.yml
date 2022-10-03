@@ -25,12 +25,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+        cache: 'yarn'
+    - run: yarn ci
+    - run: yarn run build --if-present
     - name: Deploy
       uses: hectorromerodev/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
-    - run: npm test
+    - run: yarn test
